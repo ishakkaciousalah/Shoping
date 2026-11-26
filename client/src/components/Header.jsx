@@ -1,4 +1,4 @@
-function Header() {
+function Header({panierCount}) {
   return (
     <header className="border-b border-zinc-800 bg-zinc-950 text-zinc-100">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6">
@@ -6,7 +6,7 @@ function Header() {
           href="/"
           className="text-3xl font-bold tracking-tight text-amber-400"
         >
-          Shoping
+          Shopp.ing
         </a>
 
         <nav className="flex flex-wrap items-center gap-4 text-sm font-medium text-zinc-300">
@@ -39,7 +39,7 @@ function Header() {
           type="button"
           className="rounded-md bg-amber-400 px-4 py-2 text-sm font-semibold text-zinc-950 transition-colors hover:bg-amber-300"
         >
-          Panier
+          Panier {panierCount}
         </button>
       </div>
     </header>

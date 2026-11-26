@@ -1,4 +1,4 @@
-function Produits() {
+function Produits({weAdd ,like , jaimeCount1 ,like2 , like3 , jaimeCount2 , jaimeCount3}) {
   return (
     <section id="pc-portables" className="bg-zinc-950 py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -27,9 +27,17 @@ function Produits() {
 
               <button
                 type="button"
+                onClick={weAdd}
                 className="mt-4 w-full rounded-md bg-amber-400 px-4 py-2 font-semibold text-zinc-950 transition-colors hover:bg-amber-300"
               >
                 Ajouter au panier
+              </button>
+              <button
+                type="button"
+                onClick={like}
+                className="mt-4 w-full rounded-md bg-amber-400 px-4 py-2 font-semibold text-zinc-950 transition-colors hover:bg-amber-300"
+              >
+                J'aime {jaimeCount1}
               </button>
             </div>
           </div>
@@ -54,9 +62,17 @@ function Produits() {
 
               <button
                 type="button"
+                onClick={weAdd}
                 className="mt-4 w-full rounded-md bg-amber-400 px-4 py-2 font-semibold text-zinc-950 transition-colors hover:bg-amber-300"
               >
                 Ajouter au panier
+              </button>
+              <button
+                type="button"
+                onClick={like2}
+                className="mt-4 w-full rounded-md bg-amber-400 px-4 py-2 font-semibold text-zinc-950 transition-colors hover:bg-amber-300"
+              >
+                J'aime {jaimeCount2}
               </button>
             </div>
           </div>
@@ -81,9 +97,18 @@ function Produits() {
 
               <button
                 type="button"
+                onClick={weAdd}
                 className="mt-4 w-full rounded-md bg-amber-400 px-4 py-2 font-semibold text-zinc-950 transition-colors hover:bg-amber-300"
               >
+                
                 Ajouter au panier
+              </button>
+              <button
+                type="button"
+                onClick={like3}
+                className="mt-4 w-full rounded-md bg-amber-400 px-4 py-2 font-semibold text-zinc-950 transition-colors hover:bg-amber-300"
+              >
+                J'aime {jaimeCount3}
               </button>
             </div>
           </div>
